@@ -1,0 +1,9 @@
+Squirt v0.1
+
+A simple personal blogging tool using Sinatra and MongoDB.
+
+TODO
+-Documentation
+-TESTS!
+-Embedded comments
+-Tags

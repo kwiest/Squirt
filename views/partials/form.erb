@@ -1,0 +1,15 @@
+<form action="/posts/<%= @post.id %>" method="post">
+  <input type="hidden" name="_method" value="<%= locals[:method] %>" />
+
+  <p>
+    <label for="post[title]">Title</label><br />
+    <input type="text" name="post[title]" id="post[title]" value="<%= @post.title %>" />
+  </p>
+  <p>
+    <label for="post[body]">Body</label><br />
+    <textarea name="post[body]" id="post[body]" class="tinymce"><%= @post.body %></textarea>
+  </p>
+  <p>
+    <input type="submit" value="Publish!" /> or <a href="/" class="cancel">Cancel</a>
+  </p>
+</form>

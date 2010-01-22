@@ -1,0 +1,8 @@
+<h3>Posts (<%= @posts.size %>)</h3>
+
+<% if admin? %>
+  <%= button_to "/posts/new", "New Post" %>
+<% end %>
+
+<%= partial :post, :collection => @posts %>
+

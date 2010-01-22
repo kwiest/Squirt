@@ -1,0 +1,14 @@
+<h2><%= @post.title %></h2>
+
+<% if admin? %>
+  <%= button_to "/posts/#{@post.id}/edit", "Edit Post" %>
+  <%= button_to "/posts/#{@post.id}", "Delete Post", :method => "delete" %>
+<% end %>
+
+<p>
+  Created: <%= @post.created_at %><br />
+  Updated: <%= @post.updated_at %>
+</p>
+
+<p><%= @post.body %></p>
+
